@@ -1,0 +1,1867 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>Nuevo Curso de ECMAScript: Historia y Versiones de JavaScript</title>
+    <style>
+        img {
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Nuevo Curso de ECMAScript: Historia y Versiones de JavaScript</h1>
+    </header>
+    <main class="container">
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 1 de 32 - Historia de JavaScript: ¿qué es ECMAScript?</h2>
+                <div class="Resources-description">
+                    <p><strong>ECMAScript</strong> es una especificación de lenguaje de programación con la que trabaja
+                        JavaScript. <a href="https://www.ecma-international.org/" target="_blank" rel=" noopener">Ecma
+                            International</a> está a cargo de estandarizar este lenguaje de programación, a través de
+                        una <strong>serie de versiones que añaden funcionalidades nuevas</strong>.</p>
+                    <h2>El primer Navegador web</h2>
+                    <p>La historia del primer navegador web empieza desde la necesidad de comunicar varias computadoras,
+                        a través de los siguientes acontecimientos:</p>
+                    <ul>
+                        <li><strong>1950:</strong> Las computadoras surgen para analizar temas de la <strong>Segunda
+                                Guerra Mundial</strong>.</li>
+                        <li><strong>1969:</strong> Surge la <strong>Red Arpanet</strong>, capaz de conectarse dos
+                            computadoras para compartir información.</li>
+                        <li><strong>1990:</strong> Tim Berners-lee creó las bases de la web, la <strong>World Wide
+                                Web</strong>.</li>
+                        <li><strong>1993:</strong> Se crea <strong>Mosaic</strong>, el primer navegador web.</li>
+                        <li><strong>1994:</strong> Marc Andreessen crea la empresa <strong>Netscape</strong>, y a su vez
+                            crea el primer navegador comercial con el mismo nombre, con enlaces e imagenes muy
+                            primitivas.</li>
+                    </ul>
+                    <h2>La guerra de navegadores</h2>
+                    <p>La guerra de los navegadores surge por la necesidad de las empresas de <strong>acaparar con el
+                            mercado de la web</strong>. En la primera guerra de navegadores, entre 1995 y 2001, se
+                        enfrentaron <strong>Netscape y Microsoft</strong> para posicionar comercialmente su propio
+                        navegador.</p>
+                    <p>Incluso llegaron a hacerse bromas muy pesadas, como llevar el logo de Internet Explorer a las
+                        oficinas de Netscape. A partir de esta guerra surgieron nuevas tecnologías que perduran hasta la
+                        actualidad.</p>
+                    <p>Los acontecimientos más importantes fueron:</p>
+                    <ul>
+                        <li><strong>1995:</strong> Microsoft crea su propio navegador web, <strong>Internet
+                                Explorer</strong>.</li>
+                        <li><strong>1996:</strong> Microsoft crea su propuesta de estilos para la web,
+                            <strong>CSS</strong>.
+                        </li>
+                        <li><strong>1995:</strong> Netscape crea su propuesta de lenguaje de programación para la web,
+                            <strong>Mocha</strong>. Después sería nombrado <strong>LiveScript</strong>, y finalmente
+                            <strong>JavaScript</strong>. JavaScript es un nombre elegido por <em>marketing</em>, ya que
+                            Java (otro lenguaje de programación) era muy popular en aquella época.
+                        </li>
+                        <li><strong>1995:</strong> Microsoft crea su propuesta de lenguaje de programación para la web,
+                            <strong>JScript</strong>.
+                        </li>
+                        <li><strong>1997:</strong> Se crea <strong>ECMA</strong>, <em>European Computer Manufacturer
+                                Association</em>, para estandarizar los múltiples lenguajes de programación que estaban
+                            surgiendo por parte de Netscape, Microsoft, y otras empresas más. <strong>Este estándar se
+                                denomina ECMAScript o ES.</strong></li>
+                    </ul>
+                    <h2>Evolución de ECMAScript</h2>
+                    <p>A partir de 1997, ECMA empezó a lanzar versiones para estandarizar el lenguaje. Alguna
+                        abandonada, como la ES4.</p>
+                    <figure><img
+                            src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/ecma01.PNG"
+                            alt="Historia de ECMAScript"></figure>
+                    <p>A partir de 2015, con ECMAScript 6, fue un antes y después para el lenguaje. Se incluyen varias
+                        funcionalidades que situaron a JavaScript como uno de los mejores lenguajes de programación.</p>
+                    <h2>¿Qué aprenderás?</h2>
+                    <p>En este curso aprenderás las nuevas características de cada versión de ECMAScript como:</p>
+                    <ul>
+                        <li>Parámetros por defecto</li>
+                        <li>Plantillas literales</li>
+                        <li>Declaración de variables con let y const</li>
+                        <li>Funciones flecha</li>
+                        <li>Promesas y async / await</li>
+                        <li>Clases y módulos</li>
+                    </ul>
+                    <p><strong>Profesor:</strong> <a href="https://platzi.com/profes/gndx/" target="_blank"
+                            rel=" noopener">Oscar Barajas Tavares</a> <em>Frontend Developer en Platzi</em>.</p>
+                    <h2>¿Qué puedo o no utilizar de ECMAScript?</h2>
+                    <p>A lo largo de este curso aprenderás nuevas características de JavaScript. Sin embargo, puede que
+                        el <strong>navegador en el que trabajes no la soporte</strong>, esto por el mismo hecho de ser
+                        algo nuevo.</p>
+                    <p><strong>Cada navegador web tarda un tiempo en aplicar las nuevas características de
+                            ECMAScript.</strong> Esto quiere decir, que si utilizas una funcionalidad nueva, el
+                        navegador no las procese y colapse tu programa.</p>
+                    <p>Como buena práctica te recomiendo el sitio web <em><a href="https://caniuse.com/" target="_blank"
+                                rel=" noopener">Can I use?</a></em>, que muestra qué <strong>funcionalidades añadidas
+                            por ECMAScript están soportadas por cada navegador.</strong></p>
+                    <p>Esto es relevante para conocer <strong>qué puedes aplicar o qué no en tu código</strong>. También
+                        sirve para enfocarte en qué navegadores están tus clientes objetivo, y el producto entregado
+                        esté correcto para ellos.</p>
+                    <figure><img
+                            src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/ecma02.png"
+                            alt="Página web para conocer las características que soporta cada navegador"></figure>
+                    <h2>Herramientas que emplearás</h2>
+                    <ul>
+                        <li>
+                            <p><a href="https://code.visualstudio.com/download" target="_blank" rel=" noopener">Visual
+                                    Studio Code</a> es el editor de código que se recomienda utilizar para tus proyectos
+                                y ofrece varias características para mejorar tu experiencia en el desarrollo.</p>
+                        </li>
+                        <li>
+                            <p>Si estás usando Visual Studio Code, instala la extensión <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner"
+                                    target="_blank" rel=" noopener">Code Runner</a> que te permite ejecutar bloques de
+                                JavaScript y mostrar el resultado en la terminal.</p>
+                        </li>
+                        <li>
+                            <p>La <strong>consola del navegador</strong> es importante para ver que está pasando con el
+                                código generado. La consola se muestra con la combinación de teclas <code>F12</code> /
+                                <code>Ctrl + Shift + I</code> / <code>Cmd + Opt + I</code> o clic derecho e
+                                “Inspeccionar” en tu navegador preferido (de preferencia Google Chrome).
+                            </p>
+                        </li>
+                        <li>
+                            <p>Una alternativa a Visual Studio Code es <a href="https://codi.link/" target="_blank"
+                                    rel=" noopener">Codi.link</a>, un editor de código para escribir HTML, CSS y
+                                JavaScript; para visualizar el resultado a tiempo real.</p>
+                        </li>
+                    </ul>
+                    <p><em><strong>Contribuciones del <a href="https://platzi.com/cursos/ecmascript-nuevo/"
+                                    target="_blank" rel=" noopener">curso</a> creadas por</strong> <a
+                                href="https://platzi.com/p/andresguanov/" target="_blank" rel=" noopener">Andrés
+                                Guano</a>.</em></p>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 2 de 32 - ¿Qué es el TC39?</h2>
+                <div class="Resources-description">
+                    <p><strong>TC39</strong> es un grupo de desarrolladores, académicos y hackers que están a cargo de
+                        revisar cada nueva propuesta o funcionalidad que cumpla con el estándar. El estándar es una
+                        serie de pasos que la nueva propuesta sigue <strong>para publicarla en la alguna versión de
+                            ECMAScript a futuro.</strong></p>
+                    <h2>Etapas de una nueva propuesta para ECMAScript</h2>
+                    <p>Las etapas de una nueva propuesta para ECMAScript son:</p>
+                    <ul>
+                        <li><strong>Idea:</strong> Una inquietud del desarrollador.</li>
+                        <li><strong>Propuesta:</strong> Cómo y por qué la idea soluciona un problema.</li>
+                        <li><strong>Borrador:</strong> Todo lo que implica la nueva funcionalidad detalladamente.</li>
+                        <li><strong>Candidato:</strong> La funcionalidad es probada y desarrollada por el comité.</li>
+                        <li><strong>Preparada:</strong> La funcionalidad está lista para ser publicada.</li>
+                    </ul>
+                    <figure><img
+                            src="https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/es01.PNG"
+                            alt="Etapas que sigue una propuesta de ECMAScript"></figure>
+                    <p>En la <a href="https://tc39.es/" target="_blank" rel=" noopener">página de TC39</a> puedes
+                        revisar qué nuevas propuestas existen y en qué etapa están.</p>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 3 de 32 - Configurando nuestras herramientas</h2>
+                <div class="Resources-description">
+                    <p>Para instalar los plugins que te mostré, da click en ícono de extensiones de tu Visual Studio
+                        Code, escribe el nombre del plugin en la barra de búsqueda, seleccionalo e instala.<br>
+                        <img src="https://static.platzi.com/media/user_upload/Untitled-aa2c2c9e-d5a1-4c8d-9d45-466518f6c13a.jpg"
+                            alt="Untitled.png"><br>
+                        <code>Icono de extensiones en VSC</code><br>
+                        <strong>Plugins importantes para este curso:</strong>
+                    </p>
+                    <ol>
+                        <li><strong>Code Runner.</strong> Permite ejecutar piezas de código seleccionadas y muestra el
+                            output directamente en nuestro editor de código. (Más de <a
+                                href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner"
+                                target="_blank" rel=" noopener">Code Runner</a>)</li>
+                        <li><strong>Live Server</strong>. La vamos a utilizar para ejecutar un servidor y ver los
+                            cambios efectuados en tu código. (Más de <a
+                                href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                                target="_blank" rel=" noopener">Live Server</a>)</li>
+                        <li><strong>JavaScript (ES6) code snippets</strong>. Autocompleta y brinda sugerencias al
+                            momento de escribir código. (Más de <a
+                                href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets"
+                                target="_blank" rel=" noopener">code snippets</a>)</li>
+                    </ol>
+                    <p><strong>Plugins recomendados para usar en tu día a día como frontend developer</strong></p>
+                    <ol>
+                        <li><strong>Auto Close Tag</strong>. Ayuda a cerrar más rápido las etiquetas que vas abriendo.
+                        </li>
+                        <li><strong>Error Lens.</strong> Muestra los errores visualizandolos de forma atractiva para que
+                            no pases ninguno por alto.</li>
+                        <li><strong>Guides.</strong> Te ayudan a indentar tu código y ordenarlo de forma más eficiente.
+                        </li>
+                        <li><strong>Indent-rainbow.</strong> Hace que la indentación sea más amigable con la ayuda de
+                            colores diferentes por nivel.</li>
+                        <li><strong>Palenight Theme.</strong> Úsalo si quieres visualizar los mismos colores que se
+                            muestran en mi editor de código.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 4 de 32 - ES6: let y const, y arrow functions</h2>
+                <div class="Resources-description">
+                    <p>En <strong>ECMAScript 6</strong> (ES6 o ES2015) fueron publicadas varias características nuevas
+                        que dotaron de gran poder al lenguaje, dos de estas son una nueva forma de declaración de
+                        variables con <code>let</code> y <code>const</code>, y funciones flechas.</p>
+                    <h2>La nueva forma para declarar variables con <em>let</em> y <em>const</em></h2>
+                    <p>Hasta ahora aprendiste a declarar variables con <code>var</code>, sin embargo, a partir de la
+                        especificación de ES6 se agregaron nuevas formas para la declaración de variables.</p>
+                    <p>Las nuevas palabras reservadas <code>let</code> y <code>const</code> resuelven varios problemas
+                        con <code>var</code> como el <em>scope</em>, <em>hoisting</em>, variables globales,
+                        re-declaración y re-asignación de variables.</p>
+                    <h3>Variables re-declaradas y re-asignadas</h3>
+                    <p><strong>La re-declaración es volver a declarar una variable, y la re-asignación es volver a
+                            asignar un valor</strong>. Entonces cada palabra reservada tiene una forma diferente de
+                        manejar variables:</p>
+                    <ul>
+                        <li>Una variable declarada con <code>var</code> puede ser re-declarada y re-asignada.</li>
+                        <li>Una variable declarada con <code>let</code> puede ser re-asignada, pero no re-declarada.
+                        </li>
+                        <li>Una variable declarada con <code>const</code> no puede ser re-declarada, ni re-asignada. Su
+                            declaración y asignación debe ser en una línea, caso contrario habrá un error.</li>
+                    </ul>
+                    <p>En conclusión, si intentas re-declarar una variable declarada con let y const habrá un error de
+                        “variable ya declarada”; por otro lado, si intentas re-asignar una variable declarada con
+                        <code>const</code> existirá un “error de tipo”.
+                    </p>
+                    <p>En los demás casos, JavaScript lo aceptará como válidos, algo problemático con <code>var</code>,
+                        por eso deja de utilizarlo.</p>
+                    <h4>Ejemplo de declaración y asignación en diferentes líneas</h4>
+                    <pre><code class="language-js"><span class="hljs-comment">// Declaración de variables</span>
+                <span class="hljs-keyword">var</span> nameVar 
+                <span class="hljs-keyword">let</span> nameLet
+                
+                <span class="hljs-comment">// Asignación de variables</span>
+                nameVar= <span class="hljs-string">"soy var"</span>
+                nameLet = <span class="hljs-string">"soy let"</span>
+                </code></pre>
+                    <p>Aunque realmente lo que pasa si no asignas un valor en la declaración, JavaScript le asigna un
+                        valor <code>undefined</code>.</p>
+                    <h4>Ejemplo de declarar y asignar con <em>const</em> en diferentes líneas de código</h4>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> pi  <span class="hljs-comment">// SyntaxError: Missing initializer in const declaration.</span>
+                pi = <span class="hljs-number">3.14</span>
+                </code></pre>
+                    <h4>Ejemplo de re-declaración de variables</h4>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> nameVar = <span class="hljs-string">"soy var"</span>
+                <span class="hljs-keyword">let</span> nameLet = <span class="hljs-string">"soy let"</span>
+                <span class="hljs-keyword">const</span> nameConst = <span class="hljs-string">"soy const"</span>
+                
+                <span class="hljs-comment">// Re-declaración de variables</span>
+                <span class="hljs-keyword">var</span> nameVar = <span class="hljs-string">"var soy"</span> 
+                <span class="hljs-built_in">console</span>.log(nameVar) <span class="hljs-comment">// 'var soy'</span>
+                
+                <span class="hljs-keyword">let</span> nameLet = <span class="hljs-string">"let soy"</span> <span class="hljs-comment">// SyntaxError: Identifier 'nameLet' has already been declared.</span>
+                
+                <span class="hljs-keyword">const</span> nameConst = <span class="hljs-string">"const soy"</span> <span class="hljs-comment">//SyntaxError: Identifier 'nameConst' has already been declared.</span>
+                </code></pre>
+                    <h4>Ejemplo de re-asignación de variables</h4>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> nameVar = <span class="hljs-string">"soy var"</span>
+                <span class="hljs-keyword">let</span> nameLet = <span class="hljs-string">"soy let"</span>
+                <span class="hljs-keyword">const</span> nameConst = <span class="hljs-string">"soy const"</span>
+                
+                <span class="hljs-comment">// Re-asignación de variables</span>
+                nameVar = <span class="hljs-string">"otro var"</span>
+                <span class="hljs-built_in">console</span>.log(nameVar) <span class="hljs-comment">// 'otro var'</span>
+                
+                nameLet = <span class="hljs-string">"otro let"</span>
+                <span class="hljs-built_in">console</span>.log(nameVar) <span class="hljs-comment">// otro let'</span>
+                
+                nameConst = <span class="hljs-string">"otro const"</span> <span class="hljs-comment">//TypeError: Assignment to constant variable.</span>
+                </code></pre>
+                    <p>Ten en cuenta que los errores pararán la ejecución de tu programa.</p>
+                    <h3><em>Scope</em></h3>
+                    <p>En el tema del <em>scope</em>, <code>let</code> y <code>const</code> <strong>tienen un
+                            <em>scope</em> de bloque</strong> y <code>var</code> no.</p>
+                    <pre><code class="language-js">{
+                <span class="hljs-keyword">var</span> nameVar = <span class="hljs-string">"soy var"</span>
+                <span class="hljs-keyword">let</span> nameLet = <span class="hljs-string">"soy let"</span>
+                }
+                
+                <span class="hljs-built_in">console</span>.log(nameVar) <span class="hljs-comment">// 'soy var'</span>
+                <span class="hljs-built_in">console</span>.log(nameLet) <span class="hljs-comment">// ReferenceError: nameLet is not defined</span>
+                </code></pre>
+                    <p>Todo el tema de Scope tiene su propio curso que deberías haber tomado: <em><a
+                                href="https://platzi.com/cursos/javascript-closures-scope/" target="_blank"
+                                rel=" noopener">Curso de Closures y Scope en JavaScript</a></em></p>
+                    <h3>Objeto global</h3>
+                    <p>En variables globales, <code>let</code> y <code>const</code>no guardan sus variables en el objeto
+                        global (<code>window</code>, <code>global</code> o <code>globalThis</code>), mientras que
+                        <code>var</code> sí los guarda.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> nameVar = <span class="hljs-string">"soy var"</span>
+                <span class="hljs-keyword">let</span> nameLet = <span class="hljs-string">"soy let"</span>
+                <span class="hljs-keyword">const</span> nameConst = <span class="hljs-string">"soy const"</span>
+                
+                globalThis.nameVar   <span class="hljs-comment">// 'soy var'</span>
+                globalThis.nameLet   <span class="hljs-comment">// undefined</span>
+                globalThis.nameConst  <span class="hljs-comment">// undefined</span>
+                </code></pre>
+                    <p>Esto es importante para que no exista re-declaración de variables.</p>
+                    <h2>Funciones flecha</h2>
+                    <p>Las funciones flecha <em>(arrow functions)</em> consiste en una <strong>función anónima</strong>
+                        con la siguiente estructura:</p>
+                    <pre><code class="language-js"><span class="hljs-comment">//Función tradicional</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nombre</span> (<span class="hljs-params">parámetros</span>) </span>{
+                    <span class="hljs-keyword">return</span> valorRetornado
+                }
+                
+                <span class="hljs-comment">//Función flecha</span>
+                <span class="hljs-keyword">const</span> nombre = (parámetros) =&gt; {
+                    <span class="hljs-keyword">return</span> valorRetornado
+                }
+                </code></pre>
+                    <p>Se denominan función flecha por el elemento <code>=&gt;</code> en su sintaxis.</p>
+                    <h3>Omitir paréntesis en las funciones flecha</h3>
+                    <p>Si existe un solo parámetro, puedes omitir los paréntesis.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> porDos = num =&gt; {
+                    <span class="hljs-keyword">return</span> num * <span class="hljs-number">2</span>
+                }
+                </code></pre>
+                    <h3>Retorno implícito</h3>
+                    <p>Las funciones flecha tienen un retorno implícito, es decir, se puede omitir la palabra reservada
+                        <code>return</code>, para que el <strong>código sea escrito en una sola línea</strong>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-comment">//Función tradicional</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">suma</span> (<span class="hljs-params">num1, num2</span>) </span>{
+                    <span class="hljs-keyword">return</span> num1 + num2
+                }
+                
+                <span class="hljs-comment">//Función flecha</span>
+                <span class="hljs-keyword">const</span> suma = (num1, num2) =&gt; num1 + num2
+                </code></pre>
+                    <p>Si el retorno requiere de más líneas y aún deseas utilizarlo de manera implícita, deberás
+                        envolver el cuerpo de la función entre paréntesis.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> suma = (num1, num2) =&gt; (
+                    num1 + num2
+                )
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    var lastName = 'David';
+                    lastName = 'Oscar';
+                    console.log(lastName);
+                    
+                    let fruit = 'Apple';
+                    fruit = 'Kiwi';
+                    console.log(fruit);
+                    
+                    const animal = 'Dog';
+                    animal = 'Cat'; // ERROR
+                    console.log(animal);
+                    
+                    const fruits = () => {
+                        if (true) {
+                            var fruit1 = 'Apple';       // FUNCTION SCOPE
+                            let fruit2 = 'Kiwi';        // BLOCK SCOPE
+                            const fruit3 = 'Banana';    // BLOCK SCOPE
+                        }
+                        console.log(fruit1);
+                        console.log(fruit2); // ERROR
+                        console.log(fruit3); // ERROR
+                    }
+                    
+                    fruits();
+                </pre>
+
+                <pre class="prettyprint">
+
+                    function square(num) {
+                        return num * num;
+                    }
+                    console.log(square(5))
+                    
+                    const square = (num) => {
+                        return num * num;
+                    }
+                    console.log(square(5))
+                    
+                    const square = num => num * num;
+                    console.log(square(5))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 5 de 32 - ES6: strings</h2>
+                <div class="Resources-description">
+                    <p>Las <strong>plantillas literales</strong> <em>(template literals)</em> consisten en <strong>crear
+                            cadenas de caracteres que puedan contener variables</strong> sin utilizar la concatenación.
+                        Esto mejora la legibilidad y la mantenibilidad del código.</p>
+                    <h2>Concatenación de caracteres</h2>
+                    <p>Antes de ES6, si querías crear una cadena larga o un mensaje elaborado, debías utilizar la
+                        concatenación. La concatenación de caracteres consiste en unir uno o varios caracteres, como si
+                        fuera una suma.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> nombre = <span class="hljs-string">"Andres"</span>
+                <span class="hljs-keyword">var</span> edad = <span class="hljs-number">23</span>
+                <span class="hljs-keyword">var</span> mensaje = <span class="hljs-string">"Mi nombre es "</span> + nombre + <span class="hljs-string">" y tengo "</span> + edad + <span class="hljs-string">" años."</span>
+                
+                <span class="hljs-built_in">console</span>.log(mensaje)
+                <span class="hljs-comment">// 'Mi nombre es Andres y tengo 23 años.'</span>
+                </code></pre>
+                    <p>Esto trae varios <strong>problemas en la legibilidad y mantenibilidad del código</strong>. Se
+                        convierte cada vez más complejo en mensajes más extensos o el estar pendiente de agregar
+                        espacios antes o después de cada variable concatenada.</p>
+                    <h2>Cómo utilizar las plantillas literales</h2>
+                    <p>Las plantillas literales añadidas en ES6, se emplea el caracter <a
+                            href="https://elcodigoascii.com.ar/codigos-ascii/acento-grave-codigo-ascii-96.html"
+                            target="_blank" rel=" noopener">acento grave</a> ( ` ), que no es una comilla simple ( ’ ),
+                        para envolver el mensaje. Para incluir las variables se utiliza la sintaxis
+                        <code>${variable}</code>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> nombre = <span class="hljs-string">"Andres"</span>
+                <span class="hljs-keyword">var</span> edad = <span class="hljs-number">23</span>
+                
+                <span class="hljs-keyword">var</span> mensaje = <span class="hljs-string">`Mi nombre es <span class="hljs-subst">${nombre}</span> y tengo <span class="hljs-subst">${edad}</span> años.`</span>
+                
+                <span class="hljs-built_in">console</span>.log(mensaje)
+                <span class="hljs-comment">// 'Mi nombre es Andres y tengo 23 años.'</span>
+                </code></pre>
+                    <p>De esta manera el código es más legible y que pueda mantenerse.</p>
+                    <h2>Plantilla multilínea</h2>
+                    <p>La plantilla multilínea consiste en crear mensajes que contengan varias líneas separadas entre
+                        sí, utilizando las <a
+                            href="https://platzi.com/clases/1815-ecmascript-6/26121-default-params-y-concatenacion/"
+                            target="_blank" rel=" noopener">plantillas literales</a>. Antes de ES6, la forma de crear
+                        una plantilla multilínea era agregar <code>\n</code> al <code>string</code>.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> mensaje = <span class="hljs-string">"Línea 1 \n"</span> + <span class="hljs-string">"línea 2"</span>
+                
+                <span class="hljs-built_in">console</span>.log(mensaje)
+                <span class="hljs-comment">// 'Línea 1</span>
+                <span class="hljs-comment">// línea 2'</span>
+                </code></pre>
+                    <p>Con ES6 solamente necesitas utilizar las plantillas literales.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> mensaje = <span class="hljs-string">`Línea 1
+                línea 2`</span>
+                
+                <span class="hljs-built_in">console</span>.log(mensaje)
+                <span class="hljs-comment">// 'Línea 1</span>
+                <span class="hljs-comment">// línea 2'</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    let hello = 'Hello';
+                    let world = 'World';
+                    let epicPhrase = hello + ' ' + world + '!';
+                    console.log(epicPhrase);
+                    
+                    // Template Literals
+                    let epicPhrase2 = `${hello} ${world}!`;
+                    console.log(epicPhrase2);
+                    
+                    // Multi-line strings
+                    
+                    let lorem = 'Esto es un string\n' + 'Esto es en otra linea';
+                    console.log(lorem)
+                    
+                    let lorem2 = `Esto es un string
+                    Esto es en otra linea`;
+                    console.log(lorem2)
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 6 de 32 - ES6: parámetros por defecto</h2>
+                <div class="Resources-description">
+                    <p>Los <strong>parámetros por defecto</strong> <em>(default params)</em> <strong>consisten en
+                            establecer un valor por defecto a los parámetros de una función</strong>, para asegurar que
+                        el código se ejecute correctamente en el caso de que no se establezcan los argumentos
+                        correspondientes en la invocación de la función.</p>
+                    <h2>Cómo era utilizar valores por defecto antes de ES6</h2>
+                    <p>Tal como puedes ver en el siguiente código, la función <code>sumar</code> recibe dos parámetros y
+                        retorna el valor total. Sin embargo, si alguien no decide poner alguno o todos los parámetros
+                        necesarios, pues que el programa no funcionará correctamente.</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumar</span>(<span class="hljs-params">number1, number2</span>)</span>{
+                  <span class="hljs-keyword">return</span> number1 + number2
+                }
+                
+                sumar(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>) <span class="hljs-comment">// 7</span>
+                sumar(<span class="hljs-number">3</span>)   <span class="hljs-comment">// NaN  </span>
+                sumar()    <span class="hljs-comment">// NaN</span>
+                </code></pre>
+                    <p>Antes de ES6, se debía establecer una variable y utilizar el operador OR ( <code>||</code>) con
+                        el valor por defecto necesario. El caracter guion bajo ( <code>_</code>) lo utilizo para
+                        diferenciar el parámetro de la función de la variable declarada.</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumar</span>(<span class="hljs-params">number1, number2</span>)</span>{
+                  <span class="hljs-keyword">var</span> _number1 = number1 || <span class="hljs-number">0</span>
+                  <span class="hljs-keyword">var</span> _number2 = number2 || <span class="hljs-number">0</span>
+                  
+                  <span class="hljs-keyword">return</span> _number1 + _number2
+                }
+                
+                sumar(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>) <span class="hljs-comment">// 7</span>
+                sumar(<span class="hljs-number">3</span>)   <span class="hljs-comment">// 3</span>
+                sumar()    <span class="hljs-comment">// 0</span>
+                </code></pre>
+                    <h2>Cómo utilizar los parámetros por defecto</h2>
+                    <p>Con los parámetros por defectos añadidos en ES6, eliminamos las declaraciones para mejorar la
+                        legibilidad y el mantenimiento del código de la siguiente manera:</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumar</span>(<span class="hljs-params">number1 = 0, number2 = 0</span>)</span>{
+                  <span class="hljs-keyword">return</span> number1 + number2
+                }
+                
+                sumar(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>) <span class="hljs-comment">// 7</span>
+                sumar(<span class="hljs-number">3</span>)   <span class="hljs-comment">// 3</span>
+                sumar()    <span class="hljs-comment">// 0</span>
+                </code></pre>
+                    <p>Puedes utilizar cualquier valor, siempre que sea necesario.</p>
+                    <h3>Posición de los parámetros por defecto</h3>
+                    <p>Si obligatoriamente necesitas el valor como argumento, ten presente que los parámetros por
+                        defecto siempre deben estar en las <strong>posiciones finales</strong>.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// ❌ Mal</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumar</span>(<span class="hljs-params">number1 = 0, number2</span>) </span>{ ... }
+                sumar(<span class="hljs-number">3</span>)   <span class="hljs-comment">// number1 = 3 y number2 = undefined </span>
+                
+                <span class="hljs-comment">// ✅ Bien</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sumar</span>(<span class="hljs-params">number1, number2 = 0</span>) </span>{ ... }
+                sumar(<span class="hljs-number">3</span>)   <span class="hljs-comment">// number1 = 3 y number2 = 0</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    function newUser(name, age, country) {
+                        var name = name || 'Oscar';
+                        var age = age || 34;
+                        var country = country || 'MX';
+                        console.log({ name, age, country })
+                    }
+                    
+                    newUser()
+                    newUser('Alex')
+                    
+                    function newAdmin(name = 'Oscar', age = 32, country = 'CL') {
+                        console.log({ name, age, country })
+                    }
+                    
+                    newAdmin()
+                    newAdmin('Juan')
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 7 de 32 - ES6: asignación de desestructuración</h2>
+                <div class="Resources-description">
+                    <p>La <strong>desestructuración</strong> <em>(destructuring)</em> consiste en <strong>extraer los
+                            valores de <em>arrays</em> o propiedades de objetos en distintas variables</strong>.</p>
+                    <h2>Desestructuración de objetos</h2>
+                    <p>La desestructuración de objetos implica extraer las propiedades de un objeto en variables.
+                        Mediante el mismo nombre de la propiedad del objeto con la siguiente sintaxis:</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> objeto = { 
+                    prop1: <span class="hljs-string">"valor1"</span>,
+                    prop2: <span class="hljs-string">"valor2"</span>,
+                    ... 
+                } 
+                
+                <span class="hljs-comment">// Desestructuración</span>
+                <span class="hljs-keyword">const</span> { prop1, prop2 } = objeto
+                </code></pre>
+                    <p>Antes de ES6, necesitabas acceder al objeto con la notación punto o corchetes por cada propiedad
+                        que se necesita y asignar ese valor a una variable diferente.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">var</span> usuario = { nombre: <span class="hljs-string">"Andres"</span>, edad: <span class="hljs-number">23</span>, plataforma: <span class="hljs-string">"Platzi"</span> }
+                
+                <span class="hljs-keyword">var</span> nombre = usuario.nombre
+                <span class="hljs-keyword">var</span> edad = usuario.edad
+                <span class="hljs-keyword">var</span> plataforma = usuario[<span class="hljs-string">"plataforma"</span>]
+                
+                <span class="hljs-built_in">console</span>.log(nombre)  <span class="hljs-comment">// 'Andres' </span>
+                <span class="hljs-built_in">console</span>.log(edad)  <span class="hljs-comment">// 23</span>
+                <span class="hljs-built_in">console</span>.log(plataforma)  <span class="hljs-comment">// 'Platzi'</span>
+                </code></pre>
+                    <p>Con la desestructuración puedes realizar lo mismo, pero en una sola línea, provocando que el
+                        código seas más legible y mantenible.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = { nombre: <span class="hljs-string">"Andres"</span>, edad: <span class="hljs-number">23</span>, plataforma: <span class="hljs-string">"Platzi"</span> }
+                
+                <span class="hljs-keyword">const</span> { nombre, edad, plataforma } = usuario
+                
+                <span class="hljs-built_in">console</span>.log(nombre)  <span class="hljs-comment">// 'Andres' </span>
+                <span class="hljs-built_in">console</span>.log(edad)  <span class="hljs-comment">// 23</span>
+                <span class="hljs-built_in">console</span>.log(plataforma)  <span class="hljs-comment">// 'Platzi'</span>
+                </code></pre>
+                    <h3>Cambiar el nombre de las variables con desestructuración</h3>
+                    <p>Si no te agrada el nombre de la propiedad del objeto, puedes cambiarlo utilizando la siguiente
+                        sintaxis:</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> objeto = { prop1: <span class="hljs-string">"valor1"</span>, prop2: <span class="hljs-string">"valor2"</span>, ... } 
+                
+                <span class="hljs-comment">// Desestructuración</span>
+                <span class="hljs-keyword">const</span> { prop1: newProp1, prop2: newProp2 } = objeto
+                </code></pre>
+                    <p>Por ejemplo:</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = { nombre: <span class="hljs-string">"Andres"</span>, edad: <span class="hljs-number">23</span>, plataforma: <span class="hljs-string">"Platzi"</span> }
+                
+                <span class="hljs-keyword">const</span> { nombre: name, edad: age, plataforma: platform } = usuario
+                
+                <span class="hljs-built_in">console</span>.log(name)  <span class="hljs-comment">// 'Andres' </span>
+                <span class="hljs-built_in">console</span>.log(age)  <span class="hljs-comment">// 23</span>
+                <span class="hljs-built_in">console</span>.log(platform)  <span class="hljs-comment">// 'Platzi'</span>
+                
+                <span class="hljs-built_in">console</span>.log(nombre)   <span class="hljs-comment">// Uncaught ReferenceError: nombre is not defined</span>
+                </code></pre>
+                    <h3>Desestructuración en parámetros de una función</h3>
+                    <p>Si envías un objeto como argumento en la invocación a la declaración de una función, puedes
+                        utilizar la desestructuración en los parámetros para obtener los valores directamente. Ten en
+                        cuenta que el nombre debe ser igual a la propiedad del objeto.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = { nombre: <span class="hljs-string">"Andres"</span>, edad: <span class="hljs-number">23</span>, plataforma: <span class="hljs-string">"Platzi"</span> }
+                
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mostrarDatos</span>(<span class="hljs-params"> { nombre, edad, plataforma } </span>)</span>{
+                    <span class="hljs-built_in">console</span>.log(nombre, edad, plataforma) 
+                }
+                
+                mostrarDatos(usuario) <span class="hljs-comment">// 'Andres', 23, 'Platzi'</span>
+                </code></pre>
+                    <h2>Desestructuración de <em>arrays</em></h2>
+                    <p>La desestructuración de <em>arrays</em> consiste en extraer los valores de un <em>array</em> en
+                        variables, utilizando la <strong>misma posición del <em>array</em></strong> con una sintaxis
+                        similar a la desestructuración de objetos.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> ]
+                
+                <span class="hljs-comment">// Desestructuración</span>
+                <span class="hljs-keyword">const</span> [uno, dos, tres ] = array
+                
+                <span class="hljs-built_in">console</span>.log(uno) <span class="hljs-comment">// 1</span>
+                <span class="hljs-built_in">console</span>.log(dos) <span class="hljs-comment">// 2</span>
+                <span class="hljs-built_in">console</span>.log(tres) <span class="hljs-comment">// 3</span>
+                </code></pre>
+                    <h3>Desestructuración para valores retornados de una función</h3>
+                    <p>Cuando una función retorna un <em>array</em>, puedes guardarlo en una variable. Por ende, puedes
+                        utilizar la desestructuración para utilizar esos valores por separado de manera legible.</p>
+                    <p>En el siguiente ejemplo, la función <code>useState</code> retorna un <em>array</em> con dos
+                        elementos: un valor y otra función actualizadora.</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useState</span>(<span class="hljs-params">value</span>)</span>{
+                    <span class="hljs-keyword">return</span> [value, updateValue()]
+                }
+                
+                <span class="hljs-comment">//Sin desestructuración </span>
+                <span class="hljs-keyword">const</span> estado = useState(<span class="hljs-number">3</span>)
+                <span class="hljs-keyword">const</span> valor = estado[<span class="hljs-number">0</span>]
+                <span class="hljs-keyword">const</span> actualizador = estado[<span class="hljs-number">1</span>]
+                
+                <span class="hljs-comment">//Con desestructuración </span>
+                <span class="hljs-keyword">const</span> [valor, actualizador] = useState(<span class="hljs-number">3</span>)
+                </code></pre>
+                    <h3>Lo que puedes hacer con desestructuración, pero no es recomendable</h3>
+                    <p>Si necesitas un elemento en cierta posición, puedes utilizar <strong>la separación por
+                            comas</strong> para identificar la variable que necesitas.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> ]
+                
+                <span class="hljs-keyword">const</span> [ ,,,,  cinco ] = array
+                
+                <span class="hljs-built_in">console</span>.log(cinco) <span class="hljs-comment">// 5</span>
+                </code></pre>
+                    <p>Como los <em>arrays</em> son un tipo de objeto, puedes utilizar la desestructuración de objetos
+                        mediante el <strong>índice y utilizando un nombre para la variable</strong>.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> ]
+                
+                <span class="hljs-keyword">const</span> {<span class="hljs-number">4</span>: cinco} = array
+                
+                <span class="hljs-built_in">console</span>.log(cinco) <span class="hljs-comment">// 5</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    // arrays destructuring
+
+                    let fruits = ['Apple', 'Banana']
+                    let [a, b] = fruits
+                    console.log(a, b)
+                    
+                    // object destructuring
+                    
+                    let user = {username: 'Oscar', age: 34}
+                    let { username, age } = user
+                    console.log(username, age)
+                </pre>
+
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 8 de 32 - ES6: spread operator</h2>
+                <div class="Resources-description">
+                    <p>El <strong>operador de propagación</strong> <em>(spread operator)</em>, como su nombre lo dice,
+                        consiste en <strong>propagar los elementos de un iterable</strong>, ya sea un <em>array</em> o
+                        <em>string</em> utilizando tres puntos (<code>...</code>) dentro de un array.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-comment">// Para strings</span>
+                <span class="hljs-keyword">const</span> array = [ ...<span class="hljs-string">"Hola"</span>]    <span class="hljs-comment">// [ 'H', 'o', 'l', 'a' ]</span>
+                
+                <span class="hljs-comment">// En arrays</span>
+                <span class="hljs-keyword">const</span> otherArray = [ ...array]   <span class="hljs-comment">//[ 'H', 'o', 'l', 'a' ]</span>
+                </code></pre>
+                    <p>También se utiliza para <strong>objetos</strong>, pero esta característica fue añadida en
+                        versiones posteriores de ECMAScript y es denominada <em><a
+                                href="https://platzi.com/clases/3504-ecmascript-nuevo/51771-expresiones-regulares/"
+                                target="_blank" rel=" noopener">propiedades de propagación</a></em>.</p>
+                    <h2>Cómo copiar arrays utilizando el operador de propagación</h2>
+                    <p>Para realizar una copia de un <em>array</em>, deberás tener cuidado de la <strong>referencia en
+                            memoria</strong>. Los <em>arrays</em> se guardan en una referencia en la memoria del
+                        computador, al crear una copia, este tendrá la misma referencia que el original. Debido a esto,
+                        <strong>si cambias algo en la copia, también lo harás en el original.</strong>
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> originalArray = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                <span class="hljs-keyword">const</span> copyArray = originalArray
+                copyArray[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>
+                
+                originalArray <span class="hljs-comment">// [0,2,3,4,5]</span>
+                originalArray === copyArray  <span class="hljs-comment">// true</span>
+                </code></pre>
+                    <p>Para evitar esto, utiliza el operador de propagación para crear una copia del <em>array</em> que
+                        utilice una <strong>referencia en memoria diferente al original</strong>.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> originalArray = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                <span class="hljs-keyword">const</span> copyArray = [...originalArray]
+                copyArray[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>
+                
+                originalArray <span class="hljs-comment">// [1,2,3,4,5]</span>
+                copyArray <span class="hljs-comment">// [0,2,3,4,5]</span>
+                originalArray === copyArray  <span class="hljs-comment">// false</span>
+                </code></pre>
+                    <h2>Cómo unir arrays y añadir elementos con el operador de propagación</h2>
+                    <p>Para unir dos arrays con el operador de propagación, simplemente debes separarlos por comas en un
+                        <em>array</em>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+                <span class="hljs-keyword">const</span> number = <span class="hljs-number">4</span>
+                <span class="hljs-keyword">const</span> array2 = [<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>]
+                
+                <span class="hljs-keyword">const</span> otherArray = [ ...array1, number, ...array2 ]
+                
+                otherArray <span class="hljs-comment">// [1,2,3,4,5,6,7]</span>
+                </code></pre>
+                    <h3>Cuidado con la copia en diferentes niveles de profundidad</h3>
+                    <p>El operador de propagación sirve para producir una copia en <strong>un solo nivel de
+                            profundidad</strong>, esto quiere decir que si existen objetos o <em>arrays</em> dentro del
+                        <em>array</em> a copiar. Entonces los sub-elementos en cada nivel, tendrán la <strong>misma
+                            referencia de memoria en la copia y en el original</strong>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> originalArray = [<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] ,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                <span class="hljs-keyword">const</span> copyArray = [...originalArray]
+                
+                originalArray[<span class="hljs-number">1</span>] === copyArray[<span class="hljs-number">1</span>] <span class="hljs-comment">// true</span>
+                </code></pre>
+                    <p>La manera de solucionar es más compleja, tendrías que emplear el operador de propagación para
+                        cada elemento en cada nivel de profundidad.</p>
+                    <p>Sin embargo, recientemente salió una forma de producir una copia profunda con <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/API/structuredClone" target="_blank"
+                            rel=" noopener">StructuredClone</a>, aunque es una característica muy reciente, así que
+                        revisa que navegadores tienen soporte.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> originalArray = [<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] ,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                <span class="hljs-keyword">const</span> copyArray = structuredClone(originalArray)
+                
+                originalArray === copyArray  <span class="hljs-comment">// false</span>
+                originalArray[<span class="hljs-number">1</span>] === copyArray[<span class="hljs-number">1</span>] <span class="hljs-comment">// false</span>
+                </code></pre>
+                    <p>Este comportamiento también sucede para objetos dentro de otros objetos, u objetos dentro de
+                        arrays.</p>
+                    <h2>Parámetro <em>rest</em></h2>
+                    <p>El parámetro <em>rest</em> consiste en <strong>agrupar el residuo de elementos</strong> mediante
+                        la sintaxis de tres puntos (<code>...</code>) seguido de una variable que contendrá los
+                        elementos en un <em>array</em>.</p>
+                    <p>Esta característica sirve para crear funciones que acepten cualquier número de argumentos para
+                        agruparlos en un <em>array</em>.</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hola</span> (<span class="hljs-params">primero, segundo, ...resto</span>) </span>{
+                  <span class="hljs-built_in">console</span>.log(primero, segundo)  <span class="hljs-comment">// 1 2</span>
+                  <span class="hljs-built_in">console</span>.log(resto) <span class="hljs-comment">// [3,4,5,6]</span>
+                }
+                
+                hola(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>)
+                </code></pre>
+                    <p>También sirve para obtener los elementos restantes de un <em>array</em> u objeto usando <a
+                            href="https://platzi.com/clases/3504-ecmascript-nuevo/51756-asignacion-de-destructuracion/"
+                            target="_blank" rel=" noopener">desestructuración</a>.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> objeto = {
+                  nombre: <span class="hljs-string">"Andres"</span>,
+                  age: <span class="hljs-number">23</span>,
+                  plataforma: <span class="hljs-string">"Platzi"</span>
+                }
+                <span class="hljs-keyword">const</span> array = [<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                
+                <span class="hljs-keyword">const</span> {plataforma, ...usuario} = objeto
+                cons [cero, ...positivos] = array
+                
+                usuario <span class="hljs-comment">// { nombre: 'Andres', age: 23 }</span>
+                positivos <span class="hljs-comment">// [ 1, 2, 3, 4, 5 ]</span>
+                </code></pre>
+                    <h3>Posición del parámetro <em>rest</em></h3>
+                    <p>El parámetro <em>rest</em> <strong>siempre deberá estar en la última posición</strong> de los
+                        parámetros de la función, caso contrario existirá un error de sintaxis.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// ❌ Mal</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hola</span> (<span class="hljs-params">primero, ...rest, ultimo</span>) </span>{ ... }
+                <span class="hljs-comment">// SyntaxError: Rest element must be last element. </span>
+                </code></pre>
+                    <h3>Diferencias entre el parámetro <em>rest</em> y el operador de propagación</h3>
+                    <p>Aunque el parámetro <em>rest</em> y el operador de propagación utilicen la misma sintaxis, son
+                        diferentes.</p>
+                    <p>El parámetro <em>rest</em> agrupa el <strong>residuo de elementos</strong> y siempre debe estar
+                        en la última posición, mientras que el operador de propagación <strong>expande los elementos de
+                            un iterable en un <em>array</em></strong> y no importa en que lugar esté situado.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+                
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hola</span> (<span class="hljs-params">primero, segundo, ...resto</span>) </span>{ <span class="hljs-comment">// &lt;- Parámetro Rest</span>
+                  <span class="hljs-built_in">console</span>.log(primero, segundo)  <span class="hljs-comment">// 1 2</span>
+                  <span class="hljs-built_in">console</span>.log(resto) <span class="hljs-comment">// [3,4,5, "final"]</span>
+                }
+                
+                hola(...array, <span class="hljs-string">"final"</span>) <span class="hljs-comment">//&lt;- Operador de propagación</span>
+                <span class="hljs-comment">//Lo mismo que hacer -&gt; hola(1,2,3,4,5, "final")</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    // spread operator
+
+                    let person = {username: 'Oscar', age: 34}
+                    let country = 'MX'
+                    let data = {id: 1, ...person, country}
+                    console.log(data)
+                    
+                    // rest
+                    
+                    function sum(num, ...values) {
+                        console.log(values)
+                        console.log(num + values[0])
+                        return num + values[0]
+                    }
+                    
+                    console.log(sum(1,2,3,4,5,6))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 9 de 32 - ES6: object literals</h2>
+                <div class="Resources-description">
+                    <p>Los <strong>objetos literales</strong> consiste en crear objetos a partir de variables
+                        <strong>sin repetir el nombre</strong>. Antes de ES6, para crear un objeto a partir de variables
+                        consistía en la siguiente manera:
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> nombre = <span class="hljs-string">"Andres"</span>
+                <span class="hljs-keyword">const</span> edad = <span class="hljs-number">23</span>
+                
+                <span class="hljs-keyword">const</span> objeto = {
+                    nombre: nombre, 
+                    edad: edad
+                }
+                
+                objeto <span class="hljs-comment">// { nombre: 'Andres', edad: 23 }</span>
+                </code></pre>
+                    <h2>Cómo utilizar objetos literales</h2>
+                    <p>Con los parámetros de objeto puedes <strong>obviar la repetición de nombres</strong>, JavaScript
+                        creará la propiedad a partir del nombre de la variable con su respectivo valor.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> nombre = <span class="hljs-string">"Andres"</span>
+                <span class="hljs-keyword">const</span> edad = <span class="hljs-number">23</span>
+                
+                <span class="hljs-keyword">const</span> objeto = {nombre, edad}
+                
+                objeto <span class="hljs-comment">// { nombre: 'Andres', edad: 23 }</span>
+                </code></pre>
+                    <p>El resultado es el mismo, pero sin la necesidad de repetir palabras. Puedes combinarlo con
+                        variables que su propiedad tiene un nombre diferente.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> nombre = <span class="hljs-string">"Andres"</span>
+                <span class="hljs-keyword">const</span> edad = <span class="hljs-number">23</span>
+                <span class="hljs-keyword">const</span> esteEsUnID = <span class="hljs-number">1</span>
+                
+                <span class="hljs-keyword">const</span> objeto = {
+                    nombre, 
+                    edad,
+                    id: esteEsUnID
+                }
+                
+                objeto <span class="hljs-comment">// { nombre: 'Andres', edad: 23, id: 1 }</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    // enhaced object literals
+
+                    function newUser(user, age, country, uId) {
+                        return {
+                            user,
+                            age,
+                            country,
+                            id: uId
+                        }
+                    }
+                    
+                    console.log(newUser('Alex', 33, 'CO', 1))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 10 de 32 - ES6: promesas</h2>
+                <div class="Resources-description">
+                    <p>Una <strong>promesa</strong> es una forma de manejar el asincronismo en JavaScript y se
+                        representa como un objeto que puede generar un valor único a futuro, que tiene dos estados, o
+                        está resuelta o incluye una razón por la cual no ha sido resuelta la solicitud.</p>
+                    <h2>Cómo utilizar las promesas</h2>
+                    <p>Solamente ten presente que la clase <code>Promise</code> y sus métodos <code>then</code> y
+                        <code>catch</code> fueron añadidos en ES6. Esto resuelve un problema del manejo del asincronismo
+                        con <em>callbacks</em>, llamado <em><a
+                                href="https://miro.medium.com/max/721/0*iiecmuTLPBqbxd5V.jpeg" target="_blank"
+                                rel=" noopener">Callback Hell</a></em>.
+                    </p>
+                    <p>El argumento de la clase <code>Promise</code> es una función que recibe dos parámetros:</p>
+                    <ul>
+                        <li><code>resolve</code>: cuando la promesa es <strong>resuelta</strong>.</li>
+                        <li><code>reject</code>: cuando la promesa es <strong>rechazada</strong>.</li>
+                    </ul>
+                    <p>Puedes utilizar cualquier nombre, siempre y cuando sepas su funcionamiento.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> promesa = () =&gt; {
+                  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+                    <span class="hljs-keyword">if</span> (something) {
+                      <span class="hljs-comment">//true o false</span>
+                      resolve(<span class="hljs-string">"Se ha resuelto la promesa"</span>)
+                    } <span class="hljs-keyword">else</span> {
+                      reject(<span class="hljs-string">"Se ha rechazado la promesa"</span>)
+                    }
+                  })
+                }
+                
+                promesa()
+                  .then(respuesta =&gt; <span class="hljs-built_in">console</span>.log(respuesta)) <span class="hljs-comment">//En caso que se ejecute resolve</span>
+                  .catch(error =&gt; <span class="hljs-built_in">console</span>.log(error)) <span class="hljs-comment">//En caso que se ejecute reject</span>
+                </code></pre>
+                    <h2>Cursos para entender el asincronismo en JavaScript</h2>
+                    <p>Si aún no sabes en qué consiste el asincronismo, no te preocupes, existen cursos completos de
+                        este tema.</p>
+                    <ul>
+                        <li><a href="https://platzi.com/cursos/javascript-navegador/" target="_blank"
+                                rel=" noopener">Curso de JavaScript Engine (V8) y el Navegador</a></li>
+                        <li><a href="https://platzi.com/cursos/asincronismo-js-2019/" target="_blank"
+                                rel=" noopener">Curso de Asincronismo con JavaScript</a></li>
+                    </ul>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const anotherFunction = () => {
+                        return new Promise((resolve, reject) => {
+                            if (false) {
+                                resolve('Hey!!')
+                            } else {
+                                reject('Whoooops')
+                            }
+                        })
+                    }
+                    
+                    anotherFunction()
+                        .then(response => console.log(response))
+                        .catch(err => console.log(err))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 11 de 32 - ES6: clases</h2>
+                <div class="Resources-description">
+                    <p>La palabra reservada <code>class</code> es una <strong>forma para crear clases y manejar la
+                            herencia en JavaScript</strong>, permitiendo resolver problemas con el paradigma de
+                        programación orientada a objetos (POO).</p>
+                    <h2>Estructura de las clases en JavaScript</h2>
+                    <p>La estructura de clases en JavaScript consiste en:</p>
+                    <ul>
+                        <li>Definir la clase con la palabra reservada <code>class</code>, seguido del nombre (por
+                            convención se empieza con mayúscula).</li>
+                        <li>La <strong>función constructora</strong> sirve para crear las variables necesarias en la
+                            instancia del objeto, a partir de los argumentos en la instancia.</li>
+                        <li>Para definir <strong>atributos</strong> necesitas el contexto <code>this</code>, que
+                            representa la instancia del objeto.</li>
+                        <li><strong>Métodos</strong> para definir las acciones de la clase.</li>
+                        <li>Para crear una <strong>instancia</strong>, deberás declarar una variable e invocar la clase
+                            con la palabra reservada <code>new</code>.</li>
+                    </ul>
+                    <pre><code class="language-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Calculator</span> </span>{
+                    <span class="hljs-comment">// Constructor</span>
+                    <span class="hljs-keyword">constructor</span>() {
+                        <span class="hljs-comment">// Atributos</span>
+                        <span class="hljs-keyword">this</span>.valueA = <span class="hljs-number">0</span>
+                        <span class="hljs-keyword">this</span>.valueB = <span class="hljs-number">0</span>
+                    }
+                    
+                    <span class="hljs-comment">// Método</span>
+                    suma(num1, num2){
+                        <span class="hljs-keyword">this</span>.valueA = num1
+                        <span class="hljs-keyword">this</span>.valueB = num2
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.valueA + <span class="hljs-keyword">this</span>.valueB
+                    }
+                }
+                
+                <span class="hljs-comment">// Instancia</span>
+                <span class="hljs-keyword">const</span> calculadora = <span class="hljs-keyword">new</span> Calculator()
+                
+                calculadora.suma(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">//4</span>
+                </code></pre>
+                    <h2>Profundiza la programación orientada a objetos</h2>
+                    <p>El tema de Programación Orientada a Objetos es un tema amplio, toma las siguientes cursos para
+                        entender mejor y aplicarlo de manera eficiente.</p>
+                    <ul>
+                        <li><a href="https://platzi.com/cursos/oop/" target="_blank" rel=" noopener">Curso de
+                                Programación Orientada a Objetos: POO</a></li>
+                        <li><a href="https://platzi.com/cursos/javascript-poo/" target="_blank" rel=" noopener">Curso
+                                Básico de Programación Orientada a Objetos con JavaScript</a></li>
+                        <li><a href="https://platzi.com/cursos/javascript-poo-intermedio/" target="_blank"
+                                rel=" noopener">Curso Intermedio de Programación Orientada a Objetos en JavaScript</a>
+                        </li>
+                    </ul>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    // declarando
+                    class User {}
+                    // instancia de una clase
+                    const newUser = new User()
+                    
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    
+                    class User {
+                        // methods
+                        greeting() {
+                            return 'Hello'
+                        }
+                    }
+                    
+                    const gndx = new User()
+                    console.log(gndx.greeting())
+                    
+                    const bebeloper = new User()
+                    console.log(bebeloper.greeting())
+                    
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    
+                    class User {
+                        // Constructor
+                        constructor() {
+                            console.log('Nuevo Usuario')
+                        }
+                    
+                        greeting() {
+                            return 'Hello'
+                        }
+                    }
+                    
+                    const alex = new User()
+                    console.log(alex.greeting())
+                    
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    
+                    // this
+                    class User {
+                        constructor(name) {
+                            this.name = name
+                        }
+                    
+                        speak() {
+                            return 'Hello'
+                        }
+                    
+                        greeting() {
+                            return `${ this.speak() } ${ this.name }`
+                        }
+                    }
+                    
+                    const alien = new User('aliensander')
+                    console.log(alien.greeting())
+                    
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    // ----------------------------------------------------
+                    
+                    // setters and getters
+                    
+                    class User {
+                        constructor(name, age) {
+                            this.name = name
+                            this.age = age
+                        }
+                    
+                        speak() {
+                            return 'Hello'
+                        }
+                    
+                        greeting() {
+                            return `${ this.speak() } ${ this.name }`
+                        }
+                    
+                        get uAge() {
+                            return this.age
+                        }
+                    
+                        set uAge(n) {
+                            this.age = n
+                        }
+                    }
+                    
+                    const juan = new User('Juan', 32)
+                    
+                    console.log(juan.uAge)
+                    juan.uAge = 20
+                    console.log(juan.uAge)
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 12 de 32 - ES6: module</h2>
+                <div class="Resources-description">
+                    <p>Para que el código de JavaScript sea más ordenado, legible y mantenible; ES6 introduce una forma
+                        de manejar código en <strong>archivos de manera modular</strong>. Esto involucra
+                        <strong>exportar</strong> funciones o variables de un archivo, e <strong>importarlas</strong> en
+                        otros archivos donde se necesite.
+                    </p>
+                    <h2>Cómo utilizar los módulos de ECMAScript</h2>
+                    <p>Para explicar cómo funciona las exportaciones e importaciones de código, debes tener mínimo dos
+                        archivos, uno para <strong>exportar</strong> las funcionalidades y otro que las
+                        <strong>importe</strong> para ejecutarlas.
+                    </p>
+                    <p>Además, si iniciaste un proyecto con NPM <em>(Node Package Manager)</em> con Node.js, necesitas
+                        especificar que el código es modular en el archivo <code>package.json</code> de la siguiente
+                        manera:</p>
+                    <pre><code class="language-json">// package.json
+                {   ...
+                    "type": "module"
+                }
+                </code></pre>
+                    <h3>Qué son las exportaciones de código</h3>
+                    <p>Las exportaciones de código consisten en <strong>crear funciones o variables para utilizarlas en
+                            otros archivos</strong> mediante la palabra reservada <code>export</code>.</p>
+                    <p>Existen dos formas de exportar, antes de declarar la funcionalidad, o entre llaves
+                        <code>{}</code>.
+                    </p>
+                    <p>Por ejemplo, en el archivo <code>math_function.js</code> declaramos una función para sumar dos
+                        valores, el cual lo exportaremos.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">//math_function.js</span>
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> add = (x,y) =&gt; {
+                    <span class="hljs-keyword">return</span> x + y
+                }
+                </code></pre>
+                    <pre><code class="language-js"><span class="hljs-comment">//math_function.js</span>
+                <span class="hljs-keyword">const</span> add = (x,y) =&gt; {
+                    <span class="hljs-keyword">return</span> x + y
+                }
+                
+                <span class="hljs-keyword">export</span> { add, otherFunction, ... }
+                </code></pre>
+                    <h3>Qué son las importaciones de código</h3>
+                    <p>Las importaciones de código consiste en <strong>usar funciones o variables de otros
+                            archivos</strong> mediante la palabra reservada <code>import</code>, que deberán estar
+                        siempre lo más arriba del archivo y utilizando el <strong>mismo nombre que el archivo
+                            original</strong>.</p>
+                    <p>Existen dos formas de exportar, antes de declarar la funcionalidad, o entre llaves
+                        <code>{}</code>.
+                    </p>
+                    <p>Por ejemplo, importamos la función <code>add</code> del archivo <code>math_function.js</code>
+                        para utilizarla en un archivo <code>main.js</code>.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// main.js</span>
+                <span class="hljs-keyword">import</span> { add, otherFunction } <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>
+                
+                add(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">//4</span>
+                </code></pre>
+                    <p>Si importamos el módulo con un nombre diferente, existirá un error de sintaxis.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// Erróneo</span>
+                <span class="hljs-keyword">import</span> { suma } <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>
+                
+                suma(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">//SyntaxError: The requested module '/src/archivo1.js' does not provide an export named 'suma'</span>
+                </code></pre>
+                    <p><strong>Para importar todas las funcionalidades de un archivo se utiliza un asterisco</strong>
+                        (<code>*</code>) y se puede cambiar el nombre para evitar la repetición de variables o funciones
+                        a través de la palabra reservada <code>as</code>.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// main.js</span>
+                <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> myMathModule <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>;
+                
+                myMathModule.add(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">//4</span>
+                myMathModule.otherFunction()
+                ...
+                </code></pre>
+                    <h3>Exportaciones por defecto</h3>
+                    <p><strong>Si solo UN valor será exportado</strong>, entonces se puede utilizar
+                        <code>export default</code>. De esta manera no es necesario las llaves <code>{}</code> al
+                        exportar e importar.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-comment">//math_function.js</span>
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span> (<span class="hljs-params">x,y</span>)</span>{
+                    <span class="hljs-keyword">return</span> x + y;
+                }
+                </code></pre>
+                    <p>Adicionalmente, no se puede usar <code>export default</code> antes de declaraciones
+                        <code>const</code>, <code>let</code> o <code>var</code>, pero puedes exportarlas al final.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-comment">// ❌ Erróneo</span>
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">const</span> add  = (x,y) =&gt; {
+                    <span class="hljs-keyword">return</span> x + y;
+                }
+                
+                <span class="hljs-comment">// ✅ Correcto</span>
+                <span class="hljs-keyword">const</span> add  = (x,y) =&gt; {
+                    <span class="hljs-keyword">return</span> x + y;
+                }
+                
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> add
+                </code></pre>
+                    <h3>Importaciones por defecto</h3>
+                    <p>Si únicamente un valor será importado, entonces se puede utilizar <strong>cualquier nombre en la
+                            importación</strong>. De esta manera no es necesario las llaves <code>{}</code>.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">//Las siguientes importaciones son válidas</span>
+                <span class="hljs-keyword">import</span>  add  <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>
+                <span class="hljs-keyword">import</span>  suma  <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>
+                <span class="hljs-keyword">import</span>  cualquierNombre  <span class="hljs-keyword">from</span> <span class="hljs-string">'./math_functions.js'</span>
+                </code></pre>
+                    <p>Sin embargo, es recomendable utilizar siempre el nombre de la función, para evitar confusiones.
+                    </p>
+                    <h3>Combinar ambos tipos de exportaciones e importaciones</h3>
+                    <p>Teniendo las consideraciones de importaciones y exportaciones, nombradas y por defecto, entonces
+                        podemos combinarlas en un mismo archivo.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">// module.js</span>
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> myExport = <span class="hljs-string">"hola"</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params"></span>) </span>{ ... }
+                
+                <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> myFunction
+                
+                <span class="hljs-comment">// main.js</span>
+                <span class="hljs-keyword">import</span> myFunction, { myExport } <span class="hljs-keyword">from</span> <span class="hljs-string">"/module.js"</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const hello = () => {
+                        console.log('Hello!')
+                    }
+                    
+                    export default hello
+                </pre>
+
+                <pre class="prettyprint">
+
+                    import  hello from './module.js'
+
+                    hello()
+                </pre>
+
+                <pre class="prettyprint">
+
+                    "type": "module"
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 13 de 32 - ES6: generatos</h2>
+                <div class="Resources-description">
+                    <p>Los <strong>generadores</strong> son funciones especiales que pueden pausar su ejecución, luego
+                        volver al punto donde se quedaron, recordando su <em>scope</em> y seguir retornando valores.</p>
+                    <p>Estos se utilizan para guardar la <strong>totalidad de datos infinitos</strong>, a través de una
+                        función matemática a valores futuros. De esta manera ocupan poca memoria, con respecto a si
+                        creamos un <em>array</em> u objeto.</p>
+                    <h2>Cómo utilizar generadores</h2>
+                    <p>La sintaxis de los generadores comprende lo siguiente:</p>
+                    <ul>
+                        <li>La palabra reservada <code>function*</code> (con el asterisco al final).</li>
+                        <li>La palabra reservada <code>yield</code> que hace referencia al valor retornado cada vez que
+                            se invoque, recordando el valor anterior.</li>
+                        <li>Crear una variable a partir de la función generadora.</li>
+                        <li>El método <code>next</code> devuelve un objeto que contiene una propiedad <code>value</code>
+                            con cada valor de <code>yield</code>; y otra propiedad <code>done</code> con el valor
+                            <code>true</code> o <code>false</code> si el generador ha terminado.
+                        </li>
+                    </ul>
+                    <p>Si el generador se lo invoca y ha retornado todos sus valores de <code>yield</code>, entonces
+                        devolverá el objeto con las propiedades <code>value</code> con <code>undefined</code> y un
+                        <code>done</code> con <code>true</code>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-comment">// Declaración</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">nombre</span>(<span class="hljs-params">parámetros</span>)</span>{
+                    <span class="hljs-keyword">yield</span> (primer valor retornado)
+                    <span class="hljs-keyword">yield</span> (segundo valor retornado)
+                    ...
+                    yield (último valor retornado)
+                
+                }
+                
+                <span class="hljs-comment">//Crear el generador</span>
+                <span class="hljs-keyword">const</span> generador = nombre(argumentos)
+                
+                <span class="hljs-comment">// Invocacioens</span>
+                generador.next().value <span class="hljs-comment">//primer valor retornado</span>
+                generador.next().value <span class="hljs-comment">//segundo valor retornado</span>
+                ...
+                generador.next().value <span class="hljs-comment">//último valor retornado</span>
+                </code></pre>
+                    <h2>Ejemplo de un generador</h2>
+                    <p>Por ejemplo, creemos un generador para retornar tres valores.</p>
+                    <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">generator</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">yield</span> <span class="hljs-number">1</span>
+                    <span class="hljs-keyword">yield</span> <span class="hljs-number">2</span>
+                    <span class="hljs-keyword">yield</span> <span class="hljs-number">3</span>
+                }
+                
+                <span class="hljs-keyword">const</span> generador = generator()
+                
+                generador.next().value <span class="hljs-comment">//1</span>
+                generador.next().value <span class="hljs-comment">//2</span>
+                generador.next().value <span class="hljs-comment">//3</span>
+                generador.next() <span class="hljs-comment">// {value: undefined, done: true}</span>
+                </code></pre>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Generator"
+                                target="_blank" rel=" noopener">Documentación de generadores</a></li>
+                    </ul>
+                    <h2>Cómo utilizar <em>for of</em> y <em>for in</em></h2>
+                    <p>Existen dos nuevas formas de utilizar ciclos repetitivos. El bucle
+                        <code>for valor of iterable</code> <strong>recorre iterables</strong>, como arrays,
+                        <code>Map</code>, <code>Set</code> e incluso un generador.
+                    </p>
+                    <p>El valor es cada elemento del iterable puede tener cualquier nombre, por eso se inicia con
+                        <code>let nombre</code>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [<span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]
+                
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> numero <span class="hljs-keyword">of</span> array) {
+                  <span class="hljs-built_in">console</span>.log(numero) <span class="hljs-comment">// 5 4 3 2 1</span>
+                }
+                </code></pre>
+                    <p>Sin embargo, debes tener en cuenta que solo podrás acceder a sus <strong>valores</strong>, y no a
+                        sus referencias, por lo que si quieres cambiar los elementos del array, necesitarás un índice
+                        <code>array[indice]</code>.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> numero <span class="hljs-keyword">of</span> array) {
+                  valor *= <span class="hljs-number">2</span> 
+                  <span class="hljs-built_in">console</span>.log(numero) <span class="hljs-comment">// 10 8 6 4 2</span>
+                }
+                 
+                <span class="hljs-built_in">console</span>.log(array) <span class="hljs-comment">// [ 5, 4, 3, 2, 1 ]</span>
+                </code></pre>
+                    <p>Si intentas recorrer un objeto de esta forma <code>for elemento of objeto</code>, te ocurrirá un
+                        error, porque <strong>un objeto no es un iterable</strong>. En su lugar puedes utilizar
+                        <code>for elemento in objeto</code>, que recorrerá las propiedades del objeto.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> objeto = { a: <span class="hljs-number">1</span>, b: <span class="hljs-number">2</span>, c: <span class="hljs-number">3</span> }
+                
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> elemento <span class="hljs-keyword">in</span> objeto) {
+                  <span class="hljs-built_in">console</span>.log(elemento) <span class="hljs-comment">// 'a' 'b' 'c'</span>
+                }
+                </code></pre>
+                    <p>Sin embargo, si utilizas <code>for elemento in array</code>, no dará un error, pero el resultado
+                        no será el esperado, ya que los arrays son un tipo de objeto donde cada propiedad es el índice
+                        del valor del array o del iterable. Por lo que debes tener cuidado.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> array = [<span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]
+                
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> elemento <span class="hljs-keyword">in</span> array) {
+                  <span class="hljs-built_in">console</span>.log(elemento) <span class="hljs-comment">// '0' '1' '2' '3' '4'</span>
+                }
+                
+                <span class="hljs-comment">/* const array = {
+                    '0': 5,
+                  '1': 4,
+                  '2': 3,
+                  '3': 2,
+                  '4': 1
+                }*/</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    function* iterate(array) {
+                        for (let value of array) {
+                            yield value;
+                        }
+                    }
+                    
+                    const it = iterate(['Oscar', 'David', 'Ana', 'Ulises', 'Jennifer'])
+                    
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                    console.log(it.next().value)
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 14 de 32 - ES6: set-add</h2>
+                <div class="Resources-description">
+                    <p><code>Set</code> es una nueva estructura de datos para almacenar <strong>elementos
+                            únicos</strong>, es decir, sin elementos repetidos.</p>
+                    <h2>Cómo utilizar los Sets</h2>
+                    <p>Para iniciar un <code>Set</code>, se debe crear una instancia de su clase a partir de un
+                        iterable. Generalmente, un iterable es un <em>array</em>.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> set = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>(iterable)
+                </code></pre>
+                    <h2>Cómo manipular los Sets</h2>
+                    <p>Para manipular estas estructuras de datos, existen los siguientes métodos:</p>
+                    <ul>
+                        <li><code>add(value)</code>: añade un nuevo valor.</li>
+                        <li><code>delete(value)</code>: elimina un elemento que contiene el <code>Set</code>, retorna un
+                            booleano si existía o no el valor.</li>
+                        <li><code>has(value)</code>: retorna un booleano si existe o no el valor dentro del
+                            <code>Set</code>.
+                        </li>
+                        <li><code>clear(value)</code>: elimina todos los valores del <code>Set</code>.</li>
+                        <li><code>size</code>: retorna la cantidad de elementos del <code>Set</code>.</li>
+                    </ul>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const list = new Set()
+
+                    list.add('Item 1')
+                    list.add('Item 2').add('Item 3')
+                    
+                    console.log(list)
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 15 de 32 - ES7: exponentiation operator y array includes</h2>
+                <div class="Resources-description">
+                    <p>La siguiente versión de <strong>ECMAScript</strong> fue publicada en 2016. Las siguientes
+                        características de ES7 o ES2016 que aprenderás son: el método <code>includes</code> de
+                        <em>arrays</em> y el operador de potenciación.
+                    </p>
+                    <h2>Operador de potenciación</h2>
+                    <p>El operador de potenciación <em>(exponential operator)</em> consiste en <strong>elevar una base a
+                            un exponente</strong> utilizando el doble asterisco (<code>**</code>).</p>
+                    <p><code>base ** exponente</code></p>
+                    <p>Por ejemplo, el cubo de 2 es igual a 8, matemáticamente expresado sería: $2^3=8$.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> potencia = <span class="hljs-number">2</span>**<span class="hljs-number">3</span>
+                
+                <span class="hljs-built_in">console</span>.log(potencia) <span class="hljs-comment">// 8</span>
+                </code></pre>
+                    <h2>Método includes</h2>
+                    <p>El método <code>includes</code> determina si un <em>array</em> o <em>string</em> incluye un
+                        determinado elemento. Devuelve <code>true</code> o <code>false</code>, si existe o no
+                        respectivamente.</p>
+                    <p>Este método recibe dos argumentos:</p>
+                    <ul>
+                        <li>El <strong>elemento</strong> a comparar.</li>
+                        <li>El <strong>índice inicial</strong> desde donde comparar hasta el último elemento.</li>
+                    </ul>
+                    <h3>Índices positivos y negativos</h3>
+                    <p>Los índices positivos comienzan desde 0 hasta la longitud total menos uno, de <strong>izquierda a
+                            derecha</strong> del <em>array</em>.</p>
+                    <pre><code class="language-js">[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>, ...., lenght<span class="hljs-number">-1</span>]
+                </code></pre>
+                    <p>Los índices negativos comienzan desde -1 hasta el negativo de la longitud total del
+                        <em>array</em>, de <strong>derecha a izquierda</strong>.
+                    </p>
+                    <pre><code class="language-js">[-lenght, ...,  <span class="hljs-number">-3</span>, <span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>]
+                </code></pre>
+                    <h3>Ejemplos utilizando el método <em>includes</em></h3>
+                    <p>El método <code>includes</code> se utiliza para <em>arrays</em> y <em>strings</em>. El método es
+                        sensible a mayúsculas, minúsculas y espacios.</p>
+                    <pre><code class="language-js"><span class="hljs-comment">//Utilizando strings</span>
+                <span class="hljs-keyword">const</span> saludo = <span class="hljs-string">"Hola mundo"</span>
+                
+                saludo.includes(<span class="hljs-string">"Hola"</span>) <span class="hljs-comment">// true</span>
+                saludo.includes(<span class="hljs-string">"Mundo"</span>) <span class="hljs-comment">// false</span>
+                saludo.includes(<span class="hljs-string">" "</span>) <span class="hljs-comment">// true</span>
+                saludo.includes(<span class="hljs-string">"Hola"</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">// false</span>
+                saludo.includes(<span class="hljs-string">"mundo"</span>, <span class="hljs-number">-5</span>) <span class="hljs-comment">// true</span>
+                </code></pre>
+                    <pre><code class="language-js"><span class="hljs-comment">// Utilizando arrays</span>
+                <span class="hljs-keyword">const</span> frutas = [<span class="hljs-string">"manzana"</span>, <span class="hljs-string">"pera"</span>, <span class="hljs-string">"piña"</span>, <span class="hljs-string">"uva"</span>]
+                
+                frutas.includes(<span class="hljs-string">"manzana"</span>) <span class="hljs-comment">// true</span>
+                frutas.includes(<span class="hljs-string">"Pera"</span>) <span class="hljs-comment">// false</span>
+                frutas.includes(<span class="hljs-string">"sandía"</span>) <span class="hljs-comment">// false</span>
+                frutas.includes(<span class="hljs-string">"manzana"</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">// false</span>
+                frutas.includes(<span class="hljs-string">"piña"</span>, <span class="hljs-number">-1</span>) <span class="hljs-comment">// false</span>
+                frutas[<span class="hljs-number">0</span>].includes(<span class="hljs-string">"man"</span>) <span class="hljs-comment">// true</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const data = 3 ** 4
+                    console.log(data)
+                </pre>
+
+                <pre class="prettyprint">
+
+                    let numbers = [1,2,3,4,5]
+
+                    console.log(numbers.includes(5))
+                    console.log(numbers.includes(9))
+                    
+                    const list = ['Oscar', 'David', 'Ana']
+                    
+                    console.log(list.includes('Oscar'))
+                    console.log(list.includes('oscar'))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 16 de 32 - ES8: object entries y object values</h2>
+                <div class="Resources-description">
+                    <p>Los métodos de <strong>transformación de objetos a <em>arrays</em></strong> sirven para obtener
+                        la información de las propiedades, sus valores o ambas.</p>
+                    <h2>Obtener los pares de valor de un objeto en un <em>array</em></h2>
+                    <p><code>Object.entries()</code> devuelve un <em>array</em> con las <em>entries</em> en forma
+                        <code>[propiedad, valor]</code> del objeto enviado como argumento.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = {
+                    name: <span class="hljs-string">"Andres"</span>,
+                    email: <span class="hljs-string">"andres@correo.com"</span>,
+                    age: <span class="hljs-number">23</span>
+                }
+                
+                <span class="hljs-built_in">Object</span>.entries(usuario) 
+                <span class="hljs-comment">/* 
+                [
+                  [ 'name', 'Andres' ],
+                  [ 'email', 'andres@correo.com' ],
+                  [ 'age', 23 ]
+                ]  
+                */</span>
+                </code></pre>
+                    <h2>Obtener las propiedades de un objeto en un <em>array</em></h2>
+                    <p><code>Object.keys()</code> devuelve un <em>array</em> con las propiedades <em>(keys)</em> del
+                        objeto enviado como argumento.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = {
+                    name: <span class="hljs-string">"Andres"</span>,
+                    email: <span class="hljs-string">"andres@correo.com"</span>,
+                    age: <span class="hljs-number">23</span>
+                }
+                
+                <span class="hljs-built_in">Object</span>.keys(usuario) 
+                <span class="hljs-comment">// [ 'name', 'email', 'age' ]</span>
+                </code></pre>
+                    <h2>Obtener los valores de un objeto en un <em>array</em></h2>
+                    <p><code>Object.values()</code> devuelve un <em>array</em> con los valores de cada propiedad del
+                        objeto enviado como argumento.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = {
+                    name: <span class="hljs-string">'Andres'</span>,
+                    email: <span class="hljs-string">"andres@correo.com"</span>,
+                    age: <span class="hljs-number">23</span>
+                }
+                
+                <span class="hljs-built_in">Object</span>.values(usuario) 
+                <span class="hljs-comment">// [ 'Andres', 'andres@correo.com', 23 ]</span>
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const countries = {
+                        MX: 'Mexico',
+                        CO: 'Colombia',
+                        CL: 'Chile',
+                        PE: 'Peru'
+                    }
+                    
+                    console.log(Object.entries(countries))
+                </pre>
+
+                <pre class="prettyprint">
+
+                    const countries = {
+                        MX: 'Mexico',
+                        CO: 'Colombia',
+                        CL: 'Chile',
+                        PE: 'Peru'
+                    }
+                    
+                    console.log(Object.values(countries))
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 17 de 32 - ES8: string padding y trailing commas</h2>
+                <div class="Resources-description">
+                    <p>Las siguientes características de ES8 o ES2017 que aprenderás son: rellenar un <em>string</em> y
+                        <em>trailing commas</em>.
+                    </p>
+                    <h2>Rellenar un <em>string</em> o <em>padding</em></h2>
+                    <p>El <em>padding</em> consiste en rellenar un <code>string</code> por el principio o por el final,
+                        con el carácter especificado, repetido hasta que complete la longitud máxima.</p>
+                    <p>Este método recibe dos argumentos:</p>
+                    <ul>
+                        <li>La longitud máxima a rellenar, incluyendo el <code>string</code> inicial.</li>
+                        <li>El <code>string</code> para rellenar, por defecto, es un espacio.</li>
+                    </ul>
+                    <p>Si la longitud a rellenar es menor que la longitud del <code>string</code> actual, entonces no
+                        agregará nada.</p>
+                    <h3>Método <em>padStart</em></h3>
+                    <p>El método <code>padStart</code> completa un <code>string</code> con otro <code>string</code>
+                        <strong>en el inicio</strong> hasta tener un total de caracteres especificado.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-string">'abc'</span>.padStart(<span class="hljs-number">10</span>) <span class="hljs-comment">// "       abc"</span>
+                <span class="hljs-string">'abc'</span>.padStart(<span class="hljs-number">10</span>, <span class="hljs-string">"foo"</span>) <span class="hljs-comment">// "foofoofabc"</span>
+                <span class="hljs-string">'abc'</span>.padStart(<span class="hljs-number">6</span>,<span class="hljs-string">"123465"</span>) <span class="hljs-comment">// "123abc"</span>
+                <span class="hljs-string">'abc'</span>.padStart(<span class="hljs-number">8</span>, <span class="hljs-string">"0"</span>) <span class="hljs-comment">// "00000abc"</span>
+                <span class="hljs-string">'abc'</span>.padStart(<span class="hljs-number">1</span>) <span class="hljs-comment">// "abc"</span>
+                </code></pre>
+                    <h3>Método <em>padEnd</em></h3>
+                    <p>El método <code>padEnd</code> completa un <code>string</code> con otro <code>string</code>
+                        <strong>en el final</strong> hasta tener un total de caracteres especificado.
+                    </p>
+                    <pre><code class="language-js"><span class="hljs-string">'abc'</span>.padEnd(<span class="hljs-number">10</span>) <span class="hljs-comment">// "abc       "</span>
+                <span class="hljs-string">'abc'</span>.padEnd(<span class="hljs-number">10</span>, <span class="hljs-string">"foo"</span>) <span class="hljs-comment">// "abcfoofoof"</span>
+                <span class="hljs-string">'abc'</span>.padEnd(<span class="hljs-number">6</span>, <span class="hljs-string">"123456"</span>) <span class="hljs-comment">// "abc123"</span>
+                <span class="hljs-string">'abc'</span>.padEnd(<span class="hljs-number">1</span>) <span class="hljs-comment">// "abc"</span>
+                </code></pre>
+                    <h2><em>Trailing commas</em></h2>
+                    <p>Las <em>trailing commas</em> consisten en comas al final de objetos o <em>arrays</em> que
+                        faciliten añadir nuevos elementos y evitar errores de sintaxis.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">const</span> usuario = {
+                    name: <span class="hljs-string">'Andres'</span>,
+                    email: <span class="hljs-string">"andres@correo.com"</span>,
+                    age: <span class="hljs-number">23</span>, <span class="hljs-comment">//&lt;-- Trailing comma</span>
+                }
+                
+                <span class="hljs-keyword">const</span> nombres = [
+                    <span class="hljs-string">"Andres"</span>,
+                    <span class="hljs-string">"Valeria"</span>,
+                    <span class="hljs-string">"Jhesly"</span>, <span class="hljs-comment">//&lt;-- Trailing comma</span>
+                 ]
+                
+                </code></pre>
+                    <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+
+                <pre class="prettyprint">
+
+                    const string = 'Hola'
+
+                    console.log(string.padStart(10, 'hi'))
+                    console.log(string.padEnd(10, '_'))
+                </pre>
+
+                <pre class="prettyprint">
+
+                    const array = [24, 35, 25, 24, , ,, 45]
+                    console.log(array)
+                    console.log(array.length)
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="row">
+            <article class="col">
+                <h2>Sección 18 de 32 - ES8: funciones asíncronas</h2>
+                <pre class="prettyprint">
+
+                <div class="Resources-description"><p>En ECMAScript 2017 o ES8 fue añadida una <strong>nueva forma de manejar el asincronismo</strong> en JavaScript mediante funciones asíncronas.</p>
+                    <h2>Cómo utilizar funciones asíncronas</h2>
+                    <p>La función asíncrona se crea mediante la palabra reservada <code>async</code> y retorna una promesa.</p>
+                    <pre><code class="language-js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">asyncFunction</span> (<span class="hljs-params"></span>) </span>{...}
+                    
+                    <span class="hljs-keyword">const</span> asyncFunction = <span class="hljs-keyword">async</span> () =&gt; { ... } 
+                    </code></pre>
+                <p>La palabra reservada <code>await</code> significa que <strong>espera hasta que una promesa sea
+                        resuelta</strong> y solo funciona dentro de una función asíncrona. Los bloques
+                    <code>try / catch</code> sirven para manejar si la promesa ha sido resuelta o rechazada.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">asyncFunction</span> (<span class="hljs-params"></span>) </span>{
+                      <span class="hljs-keyword">try</span> {
+                        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> promesa()
+                        <span class="hljs-keyword">return</span> response
+                      } <span class="hljs-keyword">catch</span> (error) {
+                        <span class="hljs-keyword">return</span> error
+                      }
+                    }
+                    </code></pre>
+                <p>¿Cuál es la mejor forma de manejar promesas, <code>then</code> o <code>async / await</code>? Ambas
+                    son muy útiles, manejar ambas te hará un mejor desarrollador.</p>
+                <ul>
+                    <li><a href="https://platzi.com/cursos/asincronismo-js/" target="_blank" rel=" noopener">Curso de
+                            Asincronismo con JavaScript</a></li>
+                </ul>
+                <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+                </pre>
+
+                <pre class="prettyprint">
+                        
+                    const fnAsync = () => {
+                        return new Promise((resolve, reject) => {
+                            (true)
+                                ? setTimeout(() => resolve('Async'), 2000)
+                                : reject(new Error('Error!'))
+                        })
+                    }
+                    
+                    const anotherFn = async () => {
+                        const something = await fnAsync();
+                        console.log(something)
+                        console.log('hello')
+                    }
+                    
+                    console.log('before')
+                    anotherFn()
+                    console.log('after')
+                </pre>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section class="row">
+          <article class="col">
+            <h2>Sección 19 de 32 - ES9: expresiones regulares</h2>
+            <div class="Resources-description"><p>La siguiente versión de ECMAScript fue publicada en 2018. Las características de ES9 o ES2018 que aprenderás son: expresiones regulares y propiedades de propagación.</p>
+                <h2>Expresiones regulares</h2>
+                <p>Las expresiones regulares o RegEx <em>(regular expresions)</em> son <strong>patrones de búsqueda y manipulación de cadenas de caracteres</strong> increíblemente potente y están presentes en todos los lenguajes de programación.</p>
+                <p>En JavaScript se crea este patrón entre barras inclinadas (<code>/patrón/</code>) y se utiliza métodos para hacer coincidir la búsqueda.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">const</span> regexData = <span class="hljs-regexp">/([0-9]{4})-([0-9]{2})-([0-9]{2})/</span>
+                <span class="hljs-keyword">const</span> match = regexData.exec(<span class="hljs-string">'2018-04-20'</span>)
+                </code></pre>
+                <p>Este es un tema extenso, por lo que te recomiendo seguir el curso y leer los métodos sobre expresiones regulares en JavaScript:</p>
+                <ul>
+                <li><a href="https://platzi.com/cursos/expresiones-regulares/" target="_blank" rel=" noopener">Curso de Expresiones Regulares</a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel=" noopener">Expresiones regulares en JavaScript</a></li>
+                </ul>
+                <h2>Propiedades de propagación</h2>
+                <p>Las propiedades de propagación consisten en <strong>expandir las propiedades de un objeto utilizando el <em><a href="https://platzi.com/clases/3504-ecmascript-nuevo/51757-spread-operator/" target="_blank" rel=" noopener">spread operator</a></em></strong>. Sirve para crear nuevos objetos a partir de otros.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">const</span> objeto = {
+                  nombre: <span class="hljs-string">"Andres"</span>,
+                  age: <span class="hljs-number">23</span>,
+                }
+                
+                <span class="hljs-keyword">const</span> usuario = {
+                    ...objeto,
+                    plataforma: <span class="hljs-string">"Platzi"</span>
+                }
+                </code></pre>
+                <h3>Crear copias de objetos utilizando las propiedades de propagación</h3>
+                <p>Semejante a crear copias de <em>arrays</em> utilizando el operador de propagación, se puede realizar copias de objetos <strong>en un solo nivel</strong> mediante las propiedades de propagación.</p>
+                <p>De esta manera el segundo objeto tendrá una referencia en memoria diferente al original.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">const</span> objetoOriginal = {a: <span class="hljs-number">1</span>, b: <span class="hljs-number">2</span>}
+                <span class="hljs-keyword">const</span> objetoReferencia = objetoOriginal
+                <span class="hljs-keyword">const</span> objetoCopia = {...objetoOriginal}
+                
+                objetoReferencia === objetoOriginal <span class="hljs-comment">// true</span>
+                objetoOriginal === objetoCopia <span class="hljs-comment">// false</span>
+                </code></pre>
+                <h3>Cuidado con la copia en diferentes niveles de profundidad</h3>
+                <p>El operador de propagación sirve para crear una copia en <strong>un solo nivel de profundidad</strong>, esto quiere decir que si existen objetos o <em>arrays</em> dentro de un objeto a copiar. Entonces los sub-elementos en cada nivel, tendrán la <strong>misma referencia en la copia y en el original</strong>.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">const</span> original = { datos: [<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] }
+                <span class="hljs-keyword">const</span> copia = { ...original }
+                
+                original === copia <span class="hljs-comment">// false</span>
+                original[<span class="hljs-string">"datos"</span>] === copia[<span class="hljs-string">"datos"</span>] <span class="hljs-comment">// true</span>
+                </code></pre>
+                <p>La manera de solucionar esto es más compleja, tendrías que utilizar el operador de propagación para cada elemento en cada nivel de profundidad.</p>
+                <p>Sin embargo, recientemente salió una forma de <strong>crear una copia profunda</strong> con <a href="https://developer.mozilla.org/en-US/docs/Web/API/structuredClone" target="_blank" rel=" noopener">StructuredClone</a>. Aunque es una característica muy reciente, así que revisa que <a href="https://caniuse.com/?search=structuredClone" target="_blank" rel=" noopener">navegadores tienen soporte</a>.</p>
+                <pre><code class="language-js"><span class="hljs-keyword">const</span> original = { datos: [<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] }
+                <span class="hljs-keyword">const</span> copia = structuredClone(original)
+                
+                original === copia <span class="hljs-comment">// false</span>
+                original[<span class="hljs-string">"datos"</span>] === copia[<span class="hljs-string">"datos"</span>] <span class="hljs-comment">// false</span>
+                </code></pre>
+                <p><em><strong>Contribución creada por</strong> Andrés Guano (Platzi Contributor).</em></p>
+                </div>
+          </article>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
